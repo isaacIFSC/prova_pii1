@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    color: red !important;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section.carrinho {
+    flex-grow: 1;
+}
+body {
+    font-family: Arial, sans-serif;
+    }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(221, 0, 0);
+    padding: 15px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: red;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+    color: black;
+}
+.funcionalidades .funcionalidade-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.funcionalidade-item {
+    width: 45%;
+    max-width: 300px;
+}
+
+.produtos .produtos-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.preco-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 250px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .funcionalidades .funcionalidade-item, .produtos .preco-card {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.confirmation {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.confirmation h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.confirmation p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.confirmation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.confirmation-actions.confirmation-actions .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+ 

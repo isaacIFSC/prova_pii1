@@ -1,0 +1,75 @@
+.contact {
+    padding: 60px 0;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contact-form, .contact-chat {
+    flex: 1;
+    min-width: 45%;
+    max-width: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    flex-grow: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-message.user {
+    background-color: #e1f5fe;
+    text-align: right;
+}
+
+.chat-message.support {
+    background-color: #ffebee;
+    text-align: left;
+}
+
+.chat-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-primary, .btn-secondary {
+    align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+    .contact-form, .contact-chat {
+        min-width: 100%;
+    }
+}
